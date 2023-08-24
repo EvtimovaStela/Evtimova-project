@@ -1,0 +1,131 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family:sans-serif;
+}
+
+
+.header{ /* горно поле */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99,5%;
+    padding:20px 50px;
+    background-color:#954971;
+}
+.logo img{
+  width: 300px;
+}
+
+.logo img:hover {
+  -webkit-filter: brightness(120%);
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{/*линии-горе,menu  */
+    list-style: none;
+    margin: 0 15px;
+    padding: 0 10px;
+    border-left: 2px solid white;
+    border-right: 2px solid white ;
+}
+nav ul li:hover{
+  border-left: 2px solid   #a0d8f3;
+  border-right: 2px solid  #a0d8f3;
+}
+nav ul li a{ /*  горни бутони*/
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  margin-inline: 10px;
+  font-size: 28px;
+  font-family: Oranienbaum;
+}
+nav ul li a:hover{
+  color:  #a0d8f3;
+}
+
+
+*{
+ margin:0;
+ padding: 0;
+ font-family:sans-serif;
+}
+#header{
+ height: 100vh;
+ background-image: url("C:/Users/stela/OneDrive/Desktop/diploma2/sun2.5.jpg");
+ background-position: center;
+ background-size:cover;
+  }
+
+.container{
+     margin-right: 100px;
+     margin-left: 100px;
+  }
+.header-text{
+    max-width: 640px;
+  }
+
+.header-text p{
+   font-size: 30px;
+   margin-bottom:40px;
+   margin-top: 40px;
+   color:white;
+     }
+
+h1{
+padding-top: 140px;
+font-size:48px;
+margin-bottom: 40px;
+text-align: center;
+color:#e6f7ff;
+}
+
+.square{
+ height: 12px;
+ width: 12px;
+ display: inline-block;
+ background-color: #e6f7ff;
+ margin: 15px 0;
+}
+
+.common-btn{
+ padding: 18px 40px;
+ background: transparent;
+ outline: none;
+ border: 2px solid  #e6f7ff;
+ font-weight:bold;
+ cursor: pointer;
+}
+
+p{
+ font-size: 15px;
+ line-height: 22px;
+ color:#777;
+}
+
+.line-1{
+ width: 15px;
+ height: 15px;
+ display: inline-block;
+ background-color:  #e6f7ff;
+}
+
+.line-2{
+ width: 80px;
+ height: 1px;
+ display: inline-block;
+ background-color: #e6f7ff;
+}
+
+.line-3{
+ width: 60px;
+ height: 1px;
+ display: inline-block;
+ background-color: #e6f7ff;
+}
+.line{
+  line-height: 8px;
+}

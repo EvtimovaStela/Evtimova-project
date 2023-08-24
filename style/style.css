@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Oranienbaum&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oranienbaum';
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("C:/Users/stela/OneDrive/Desktop/diploma2/pole10.jpg");
+}
+
+::-webkit-scrollbar{/* скрола */
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+background-color: #844164;
+border-radius: 100px;
+}
+.topHeadlines .right .topNews::-webkit-scrollbar{
+width: 6px;
+}
+.topHeadlines .right .topNews::-webkit-scrollbar-thumb{
+background-color: #844164;/*mini scroll*/
+}
+
+.header{ /* горно поле */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:20px 50px;
+    background-color:#954971;
+}
+.logo img{
+  width: 300px;
+}
+
+.logo img:hover {
+  -webkit-filter: brightness(120%);
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{/*линии-горе,menu  */
+    list-style: none;
+    margin: 0 15px;
+    padding: 0 10px;
+    border-left: 2px solid white;
+    border-right: 2px solid white ;
+}
+nav ul li:hover{
+  border-left: 2px solid   #a0d8f3;
+  border-right: 2px solid  #a0d8f3;
+}
+nav ul li a{ /*  горни бутони*/
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  margin-inline: 10px;
+  font-size: 28px;
+  font-family: Oranienbaum;
+}
+nav ul li a:hover{
+  color:  #a0d8f3;
+}
+
+.topHeadlines{
+  padding: 100px 50px 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+.topHeadlines .left{
+  padding: 10px 30px;
+  /*background-color: #999;*/
+}
+.topHeadlines .left > .title{
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+}
+.topHeadlines .left .img{
+  width: 100%;
+  height: 400px;
+  margin-top: 10px
+}
+
+.topHeadlines .left .text{
+  z-index: 1;
+  position: relative;
+  margin-top: -125px;
+padding: 20px 15px 10px;
+background-color: rgba(0, 0, 0, 0.6);
+}
+.topHeadlines .left .text .title h2{ /* текст */
+  font-size: 30px;
+  letter-spacing: 1px;
+  display: inline;
+  cursor:pointer;
+}
+.topHeadlines .left .text .title h2:hover{
+  text-decoration: underline;
+}
+.topHeadlines .left .text .description{ /* текст 2 */
+  font-size: 18px;
+  margin-top:20px;
+  color: white;
+  letter-spacing: 1px;
+}
+.topHeadlines .right{
+  padding: 10px;
+  width: 1005px;
+  height: 500px;
+  margin-top: 25px
+
+  /*background-color: #999;*/
+}
+.topHeadlines .right > .title h2{/*нови събития backcolor*/
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+  background-color: #954971;
+}
+.topHeadlines .right .topNews{ /*zelen backcolor*/
+  padding: 7px;
+  height: 85%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow-y: scroll;
+}
+.topHeadlines .right .topNews .news{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-top: 10px
+}
+.topHeadlines .right .topNews .news .img{  /*   */
+  width: 270px;
+  height: 125px;
+  background-color:black;
+}
+.topHeadlines .right .topNews .news .text{
+  font-size: 26px;
+}
+.topHeadlines .right .topNews .news .text .title{
+  cursor: pointer;
+}
+.topHeadlines .right .topNews .news .text .title:hover{
+  text-decoration: underline;
+}
+.page2{
+  width: 100%;
+  background-color:#fed3c9; /* бак-цвят стр.2  */
+  min-height: 100vh;
+  padding: 50px;
+}
+.page2 .news{
+  padding:30px 0;
+  border-bottom: 1px solid black; /*линии между секции*/
+}
+.page2 .news:last-child{
+  padding:30px 0;
+  border-bottom: none;
+}
+.page2 .news > .title h2{/*Заглавията на статиите*/
+  font-size: 40px;
+  cursor: pointer;
+  display: inline;
+}
+.page2 .news > .title h2:hover{
+text-decoration: underline;
+}
+.page2 .news .newsBox{
+  width: 100%;
+  background-color:#954971;/* 'рамка' */
+  margin-top: 20px;
+    display: flex;
+}
+.page2 .news .newsBox .newsCard{
+  width: calc(100% / 5 - 20px); /*mini ramka*/
+  margin: 10px;
+  background-color: #bd5e90;
+}
+.page2 .news .newsBox .newsCard .img{
+  width: 342,5px;
+  height: 150px;
+  background-color:black;
+}
+.page2 .news .newsBox .newsCard .text{
+  padding:10px;
+  text-align: center
+}
+.page2 .news .newsBox .newsCard .text .title p{
+  display: inline;
+  cursor: pointer;
+  font-size: 23px;
+}
+.page2 .news .newsBox .newsCard .title p:hover{
+  text-decoration: underline;
+}
+#ve4er{
+  text-decoration: none;
+  color: white;
+}
+#surmi{
+  text-decoration: none;
+  color: white;
+}
+#ve4er-pobediteli{
+  text-decoration: none;
+  color:white;
+}
+footer{
+  height: 400px;
+  border: 1px solid ;
+  background-image: url("C:/Users/stela/OneDrive/Desktop/diploma2/footer.jpg");
+}
+
+
+.holdingcontainer{
+      max-width: 100%;
+      display: flex;
+      background-color: rgba(0, 0, 0, 0);
+      box-sizing: border-box;
+      flex-direction: row;
+      margin-top:30px;
+
+    }
+
+    .internalcontainerL{
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0);
+      padding: 30px;
+      font-size: 30px;
+
+      margin-left: 33px;
+    }
+
+    .internalcontainerM{
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0);
+      padding: 30px;
+      font-size: 30px;
+
+      margin: 3px;
+    }
+
+    .internalcontainerR{
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0);
+      margin-right: 60px;
+      margin-top: 80px;
+      margin-left: 10px
+    }
+
+    @media screen and (max-width: 768px){
+      .holdingcontainer{
+        flex-direction: column-reverse;
+      }
+    }
+    h1{
+      padding-left: 100px;
+    }
+p{
+  text-align: left;
+  font-size: 30px;
+  padding: 15px;
+}
+ .info{
+  font-size: 30px;
+  padding: 30px;
+  word-spacing: 10px;
+}

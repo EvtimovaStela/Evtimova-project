@@ -12,7 +12,7 @@ body{
     min-height: 100vh;
     color: white;
     background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("C:/Users/stela/OneDrive/Desktop/diploma2/sun2.jpg");
+    img src = "sun2.jpg";
 }
 
 ::-webkit-scrollbar{/* скрола */
